@@ -1,3 +1,5 @@
+// Skia API docs, examples & best practices: https://github.com/wcandillon/react-native-skia
+// (installed from npm as @shopify/react-native-skia)
 export * from './types';
 export * from './scale';
 export { useProgress, useAnimatedNumber } from './animation';

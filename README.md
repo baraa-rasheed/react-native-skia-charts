@@ -1,7 +1,7 @@
 # @baraa-rasheed/skia-charts
 
 GPU-accelerated, **60fps** animated charts for **Expo SDK 58** / React Native, built on
-[React Native Skia](https://shopify.github.io/react-native-skia/) and Reanimated worklets. Written in strict TypeScript and ships `.d.ts` declarations.
+[React Native Skia](https://github.com/wcandillon/react-native-skia) and Reanimated worklets. Written in strict TypeScript and ships `.d.ts` declarations.
 
 ## Why it stays smooth
 - Every chart is drawn on a single Skia `<Canvas>`, so rendering happens on the GPU.
@@ -16,6 +16,11 @@ npx expo install @shopify/react-native-skia react-native-reanimated react-native
 npm i github:baraa-rasheed/react-native-skia-charts
 ```
 Wrap your app in `<GestureHandlerRootView style={{ flex: 1 }}>`.
+
+
+## Skia reference
+
+The npm package [`@shopify/react-native-skia`](https://www.npmjs.com/package/@shopify/react-native-skia) is used **only for installation**. For Skia API docs, examples, and best practices, the source of truth for this project is the GitHub repo **[https://github.com/wcandillon/react-native-skia](https://github.com/wcandillon/react-native-skia)** (see its `apps/docs` and `apps/example` folders). Implementation follows that repo's guidance: drive animations with Reanimated shared values passed directly as Skia props (no React re-renders per frame), build paths with `Skia.Path` / path builders inside worklets, and keep one `<Canvas>` per chart.
 
 ## Chart types
 Every chart accepts `width`, `height`, `padding?`, `background?`, `duration?` and `animate?`.
