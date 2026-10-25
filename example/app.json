@@ -1,0 +1,3 @@
+{ "expo": { "name": "Skia Charts", "slug": "skia-charts-example", "scheme": "skiacharts", "version": "1.0.0",
+  "orientation": "portrait", "userInterfaceStyle": "automatic", "newArchEnabled": true,
+  "plugins": ["expo-router"], "experiments": { "typedRoutes": true } } }
