@@ -1,0 +1,47 @@
+{
+  "name": "@baraa-rasheed/skia-charts",
+  "version": "0.2.0",
+  "description": "GPU-accelerated, 60fps animated charts for Expo / React Native, built on React Native Skia + Reanimated worklets. Strictly typed.",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "skia",
+    "charts",
+    "reanimated",
+    "gpu"
+  ],
+  "peerDependencies": {
+    "@shopify/react-native-skia": ">=2.0.0",
+    "react": ">=19",
+    "react-native": ">=0.79",
+    "react-native-gesture-handler": ">=2.20",
+    "react-native-reanimated": ">=3.16"
+  },
+  "devDependencies": {
+    "@shopify/react-native-skia": "^2.14.0",
+    "@types/react": "^19.1.0",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-gesture-handler": "~3.3.0",
+    "react-native-reanimated": "^4.7.1",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baraa-rasheed/react-native-skia-charts.git"
+  }
+}
